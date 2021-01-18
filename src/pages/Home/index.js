@@ -24,6 +24,7 @@ function Home() {
   const [renderSearch, setRenderSearch] = useState(false);
   const [searchParam, setSearchParam] = useState('a');
   const [search, setSearch] = useState(false);
+  var url_atual = window.location.href;
 
   function searchBooks() {
     history.push({
@@ -76,11 +77,7 @@ function Home() {
             <TextDescriptionQuote>
               Oh, the Places You’ll Go! Dr Seuss
             </TextDescriptionQuote>
-            <Link
-              onClick={() =>
-                (window.location.href = 'http://localhost:3000/books')
-              }
-            >
+            <Link onClick={() => (window.location.href = `${url_atual}books`)}>
               <ButtonBooks>Go Books</ButtonBooks>
             </Link>
           </TextContainer>

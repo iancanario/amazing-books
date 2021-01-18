@@ -47,7 +47,10 @@ function BooksDetail({ match }) {
     <ContainerBackground>
       <Header>
         <ButtonIcon
-          onClick={() => (window.location.href = 'http://localhost:3000/books')}
+          onClick={() =>
+            (window.location.href =
+              'https://amazing-books-web.herokuapp.com/books')
+          }
         >
           <ImBooks size={25} />
         </ButtonIcon>
